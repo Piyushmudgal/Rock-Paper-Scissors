@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Papers Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+  </head>
+  <body>
+    <div class="symbols-container">
+      <button class="symbol" onclick="playGame('rock');"><img src="/PracticeProjects/images/rock-emoji.png"></button>
+      <button class="symbol" onclick="playGame('paper');"><img src="/PracticeProjects/images/paper-emoji.png"></button>
+      <button class="symbol" onclick="playGame('scissors');"><img src="/PracticeProjects/images/scissors-emoji.png"></button>
+    </div>
+    <p class="gameStatus">Enjoy and Good Luck!</p>
+    <p class="chosenMoves"></p>
+    <p class="game-stats">Wins: <span id="winCount"></span> &emsp; Losses: <span id="loseCount"></span> &emsp; Draws: <span id="drawCount"></span></p>
+    <button class="reset-button" onclick="resetGame()">Reset Score</button>
+
+
+    <script src="rps.js"></script>
+  </body>
+</html> 
