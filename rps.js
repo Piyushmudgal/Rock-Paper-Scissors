@@ -22,7 +22,7 @@ function updateScores() {
 
 function playGame(playerMove) {
   const computerMove = getComputerMove();
-  document.querySelector('.chosenMoves').innerHTML = `You chose <img src=\"/PracticeProjects/images/${playerMove}-emoji.png\"> <img src=\"/PracticeProjects/images/${computerMove}-emoji.png\"> Computer chose`
+  document.querySelector('.chosenMoves').innerHTML = `You chose <img src=\"images/${playerMove}-emoji.png\"> <img src=\"images/${computerMove}-emoji.png\"> Computer chose`
 
   if ((playerMove === 'rock' && computerMove === 'scissors') || (playerMove === 'paper' && computerMove === 'rock') || (playerMove === 'scissors' && computerMove === 'paper')) {
     document.querySelector('.gameStatus').innerHTML = 'You Win!';
